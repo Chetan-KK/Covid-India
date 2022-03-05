@@ -1,0 +1,15 @@
+{
+  "name": "Covid-India Tracker",
+  "short_name": "Covid-India",
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#ff7300",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "media/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

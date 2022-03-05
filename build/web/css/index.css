@@ -1,0 +1,490 @@
+.main-covid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 8vw), 0% 100%);
+  padding: 6vw 0 12vw 0;
+}
+
+.main-covid .main-covid-box {
+  color: var(--text);
+  font-weight: bold;
+  margin: 4vw;
+  width: 12rem;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px -5px var(--text);
+  transition: all 500ms;
+}
+
+.main-covid .main-covid-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 7px 7px 20px -3px var(--text);
+  background-color: var(--white);
+  animation: suffle 100ms infinite alternate;
+}
+
+.network_error {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blur-bg-color);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.network_error .box {
+  background-color: var(--white);
+  font-size: 2rem;
+  color: var(--text);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px -5px var(--text);
+}
+
+.network_error button {
+  float: right;
+  margin: 25px 0 0 0;
+  border: none;
+  background-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bolder;
+  font-size: 1rem;
+  box-shadow: 2px 2px 10px var(--text);
+  cursor: pointer;
+}
+#scrollbar {
+  position: fixed;
+  width: 0vw;
+  height: 5px;
+  background-color: var(--text);
+  z-index: 9999999999999;
+}
+@keyframes suffle {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+.main-covid .active {
+  background-image: var(--active-bg);
+}
+
+.main-covid .recovered {
+  background-image: var(--recovered-bg);
+}
+
+.main-covid .deaths {
+  background-image: var(--deaths-bg);
+}
+
+.main-covid-box .title {
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+.main-covid-box .currunt {
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.last-updated {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Last-Updated {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.Last-Updated-box {
+  background-image: linear-gradient(
+    30deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text);
+  font-weight: bold;
+  margin: -1vw 3vw;
+  padding: 1.5vw 2.5vw;
+  border-radius: 10px;
+  font-size: 2vw;
+  box-shadow: 5px 5px 15px -5px var(--text);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.Last-Updated-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 7px 7px 20px -3px var(--text);
+}
+
+hr {
+  margin: 50px auto;
+  width: 20rem;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border-width: 0;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.canvas-scroll {
+  width: 100%;
+  display: block;
+}
+#myChart {
+  margin: 10px 40px 0 0;
+}
+#chart_show {
+  color: var(--text);
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: 0;
+  cursor: pointer;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: calc(100vw - 97vw);
+  transition: 300ms;
+}
+
+#chart_show:hover {
+  padding: 1rem 2.5rem;
+}
+
+.states-table {
+  overflow-x: auto;
+  color: var(--text);
+  text-align: center;
+}
+
+.table-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.states-table table {
+  width: 84rem;
+  border-spacing: 0.5rem;
+}
+.states-table table tr th {
+  background-image: linear-gradient(
+    30deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: 200ms;
+}
+
+.states-table table td {
+  padding: 10px 25px;
+  font-size: 17px;
+  background-image: var(--metal-bg);
+  border-radius: 50px;
+  transition: 200ms;
+}
+
+.covid-prevention {
+  display: flex;
+  margin: 0rem 0 5vw 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.covid-prevention-title {
+  font-size: 3vw;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text);
+}
+
+.covid-prevention-box {
+  color: var(--text);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    30deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  width: 13rem;
+  height: 16rem;
+  padding: 1.5rem;
+  margin: 3vw 1.5vw;
+  text-align: center;
+  box-shadow: 0 0 10px -1px var(--primary-color);
+  transition: 200ms;
+}
+
+.covid-prevention-box:hover {
+  transform: scale(1.07) skew(3deg);
+}
+
+.covid-prevention-box .title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.covid-prevention-box i {
+  font-size: 5rem;
+  margin-bottom: 35px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  padding: 2rem;
+  flex-direction: column;
+}
+.news-title {
+  font-size: 3vw;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text);
+}
+.all-news {
+  color: var(--text);
+  padding: 2rem;
+  line-height: 2.5rem;
+  height: 100rem;
+  overflow-y: auto;
+  /* width: 80vw; */
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 20px -10px var(--text);
+}
+.all-news .title {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 1rem 0 1.5rem 0;
+}
+.all-news .author {
+  font-size: 1.5rem;
+}
+#news-hr {
+  width: 98%;
+  margin: 1.5rem auto;
+  height: 2px;
+}
+.contact-title {
+  font-size: 3vw;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+}
+
+.message form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message input,
+textarea {
+  width: 80vw;
+  height: 40px;
+  border: 0;
+  border-bottom: 3px solid var(--primary-color);
+  margin: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--input-bg);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text);
+  transition: 200ms;
+}
+
+.message textarea {
+  height: 20vw;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+  transform: scale(1.02);
+}
+
+#send-button {
+  width: 80px;
+  background-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: 0;
+  cursor: pointer;
+  transform: scale(1.4);
+  font-weight: bold;
+}
+
+#send-button:hover,
+#send-button:focus {
+  width: 110px;
+}
+
+.help-title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  color: var(--text);
+}
+
+@media (max-width: 780px) {
+  .main-covid {
+    padding: 6rem 20px;
+    flex-direction: column;
+  }
+  .main-covid .main-covid-box {
+    margin: 10px auto;
+    width: auto;
+    padding: 15px 40px;
+  }
+  .Last-Updated {
+    justify-content: center;
+  }
+  .Last-Updated-box {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+  }
+  .Last-Updated-title {
+    font-size: 1.5rem;
+  }
+  #Last_Updated {
+    font-size: 1.5rem;
+  }
+  .covid-prevention-title {
+    font-size: 2rem;
+  }
+  .covid-prevention-box {
+    height: 11rem;
+    padding: 15px 10px;
+  }
+  .covid-prevention-box .title {
+    margin-bottom: 1px;
+    font-size: 2rem;
+  }
+  .covid-prevention-box i {
+    margin-bottom: 1px;
+    font-size: 2rem;
+  }
+  .news-title {
+    font-size: 2rem;
+  }
+  .all-news .title {
+    font-size: 5vw;
+  }
+  #chart_show {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0;
+  }
+  #chart_show:hover {
+    padding: 10px 25px;
+  }
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: block;
+    width: 100vw;
+    overflow-x: auto;
+    text-align: center;
+  }
+  .canvas-scroll {
+    width: 100rem;
+    display: block;
+  }
+  #myChart {
+    margin: 10px 40px 0 0;
+  }
+  hr {
+    width: 17vw;
+  }
+  .contact-title {
+    font-size: 2.5rem;
+  }
+  .table-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .states-table table {
+    margin: 0;
+    border-spacing: 0;
+  }
+  .states-table table tr th {
+    border-radius: 0;
+  }
+  .states-table table td {
+    border-radius: 0;
+  }
+  .message {
+    margin: 2.5rem 0;
+  }
+  .message input,
+  textarea {
+    margin: 0;
+    width: 70vw;
+    padding: 10px 10px;
+    font-size: 15px;
+    height: auto;
+    border-bottom: 1px solid var(--primary-color);
+  }
+  #send-button {
+    margin: 0;
+    padding: 6px 10px;
+    font-size: 10px;
+    width: 3rem;
+  }
+  #send-button:hover {
+    width: 3.3rem;
+  }
+}

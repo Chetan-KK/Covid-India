@@ -1,0 +1,99 @@
+.welcome{
+    margin: 4rem 0 0 2rem;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    z-index: 99;
+}
+body{
+    padding: 4rem 0 0 0;
+}
+.welcome .message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg,var(--primary-color),var(--secondary-color));
+    font-size: calc(15px + 2vw);
+    color: var(--text);
+    text-align: center;
+    padding: 5px 10px 0 10px;
+    border-radius: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.welcome .closeButton{
+    cursor: pointer;
+    font-size: calc(35px + 2vw);
+    margin: 0 0 10px 20px;
+}
+.details-of-user{
+    display: flex;
+    justify-content: center;
+    margin: 40px 3vw 3vw 3vw;
+}
+.details-of-user .all-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 3px solid var(--primary-color);
+}
+.details-of-user .all-details .dose-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid var(--text);
+    margin: 1vw 2vw;
+    width: calc(15vw + 50px);
+    height: calc(10vw + 50px);
+    padding: 2vw;
+    text-align: center;
+}
+.dose-box .title{
+    font-size: calc(1.7vw + 10px);
+    color: var(--text);
+    margin-bottom: 10px;
+}
+.dose-box .info{
+    color: var(--text);
+    font-size: calc(1vw + 10px);
+}
+#CovidTester{
+    cursor: pointer;
+    position: fixed;
+    color: var(--text);
+    right: 20px;
+    bottom: 20px;
+    background-image: linear-gradient(0deg,var(--primary-color),10%,var(--secondary-color));
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: calc(20px + 2vw);
+    font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  font-weight: 900;
+    text-align: center;
+}
+.covidTest .title{
+    line-height: 70px;
+}
+.covidTestBox{
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+.covidTest{
+    border: 3px solid var(--text);
+    border-radius: 10px;
+    padding: 3vw;
+}

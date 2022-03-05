@@ -1,0 +1,101 @@
+.form-bg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 1rem;
+  background-image: var(--bg-img);
+  background-size: cover;
+}
+.login-form{
+  height: calc(100vh - 10rem);
+}
+.form-bg .form-title {
+  font-size: calc(35px + 3vw);
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text);
+  text-align: center;
+  text-shadow: 3px 3px 8px var(--white);
+}
+
+.form-title {
+  transform-origin: 27.3516px 23.4922px;
+  transform: translate(0px, 0px);
+}
+
+.form-bg form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-bg form input {
+  width: 17rem;
+  padding: 10px 20px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.noAC{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#log-button {
+  width: 110px;
+  transition: 300ms;
+  cursor: pointer;
+  margin: 10px 0 30px 0;
+  color: var(--text);
+}
+
+#log-button:hover,
+#log-button:focus {
+  width: 130px;
+}
+form select{
+  cursor: pointer;
+  width: 17rem;
+  padding: 5px 20px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+}
+form select option{
+  cursor: pointer;
+  background-color: var(--white);
+}
+.inputNumber::-webkit-outer-spin-button,
+.inputNumber::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.dosesDate label{
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+  color: var(--text);
+}

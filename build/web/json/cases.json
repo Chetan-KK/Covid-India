@@ -1,0 +1,375 @@
+{
+  "activeCases": 821446,
+  "activeCasesNew": 97827,
+  "recovered": 34570131,
+  "recoveredNew": 69959,
+  "deaths": 484213,
+  "deathsNew": 277,
+  "previousDayTests": 1579928,
+  "totalCases": 35875790,
+  "sourceUrl": "https://www.mohfw.gov.in/",
+  "lastUpdatedAtApify": "2022-01-11T04:00:00.000Z",
+  "readMe": "https://github.com/zpelechova/covid-in/blob/master/README.md",
+  "regionData": [
+    {
+      "region": "Andaman and Nicobar Islands",
+      "activeCases": 393,
+      "newInfected": 71,
+      "recovered": 7724,
+      "newRecovered": 25,
+      "deceased": 129,
+      "newDeceased": 0,
+      "totalInfected": 8246
+    },
+    {
+      "region": "Andhra Pradesh",
+      "activeCases": 5606,
+      "newInfected": 832,
+      "recovered": 2062732,
+      "newRecovered": 152,
+      "deceased": 14505,
+      "newDeceased": 0,
+      "totalInfected": 2082843
+    },
+    {
+      "region": "Arunachal Pradesh",
+      "activeCases": 352,
+      "newInfected": 130,
+      "recovered": 55058,
+      "newRecovered": 4,
+      "deceased": 282,
+      "newDeceased": 0,
+      "totalInfected": 55692
+    },
+    {
+      "region": "Assam",
+      "activeCases": 8214,
+      "newInfected": 1780,
+      "recovered": 614542,
+      "newRecovered": 416,
+      "deceased": 6183,
+      "newDeceased": 2,
+      "totalInfected": 628939
+    },
+    {
+      "region": "Bihar",
+      "activeCases": 20939,
+      "newInfected": 4041,
+      "recovered": 717092,
+      "newRecovered": 691,
+      "deceased": 12106,
+      "newDeceased": 5,
+      "totalInfected": 750137
+    },
+    {
+      "region": "Chandigarh",
+      "activeCases": 3253,
+      "newInfected": 889,
+      "recovered": 65054,
+      "newRecovered": 77,
+      "deceased": 1081,
+      "newDeceased": 1,
+      "totalInfected": 69388
+    },
+    {
+      "region": "Chhattisgarh",
+      "activeCases": 19222,
+      "newInfected": 3758,
+      "recovered": 994592,
+      "newRecovered": 358,
+      "deceased": 13619,
+      "newDeceased": 4,
+      "totalInfected": 1027433
+    },
+    {
+      "region": "Dadra and Nagar Haveli and Daman and Diu",
+      "activeCases": 105,
+      "newInfected": 16,
+      "recovered": 10696,
+      "newRecovered": 2,
+      "deceased": 4,
+      "newDeceased": 0,
+      "totalInfected": 10805
+    },
+    {
+      "region": "Delhi",
+      "activeCases": 65806,
+      "newInfected": 5073,
+      "recovered": 1477913,
+      "newRecovered": 14076,
+      "deceased": 25177,
+      "newDeceased": 17,
+      "totalInfected": 1568896
+    },
+    {
+      "region": "Goa",
+      "activeCases": 10139,
+      "newInfected": 930,
+      "recovered": 177829,
+      "newRecovered": 661,
+      "deceased": 3533,
+      "newDeceased": 1,
+      "totalInfected": 191501
+    },
+    {
+      "region": "Gujarat",
+      "activeCases": 32469,
+      "newInfected": 4556,
+      "recovered": 825702,
+      "newRecovered": 1539,
+      "deceased": 10130,
+      "newDeceased": 2,
+      "totalInfected": 868301
+    },
+    {
+      "region": "Haryana",
+      "activeCases": 22500,
+      "newInfected": 4179,
+      "recovered": 767310,
+      "newRecovered": 1552,
+      "deceased": 10077,
+      "newDeceased": 5,
+      "totalInfected": 799887
+    },
+    {
+      "region": "Himachal Pradesh",
+      "activeCases": 4186,
+      "newInfected": 1038,
+      "recovered": 225215,
+      "newRecovered": 160,
+      "deceased": 3884,
+      "newDeceased": 2,
+      "totalInfected": 233285
+    },
+    {
+      "region": "Jammu and Kashmir",
+      "activeCases": 4024,
+      "newInfected": 493,
+      "recovered": 336790,
+      "newRecovered": 209,
+      "deceased": 4544,
+      "newDeceased": 4,
+      "totalInfected": 345358
+    },
+    {
+      "region": "Jharkhand",
+      "activeCases": 26019,
+      "newInfected": 2691,
+      "recovered": 350863,
+      "newRecovered": 1789,
+      "deceased": 5172,
+      "newDeceased": 2,
+      "totalInfected": 382054
+    },
+    {
+      "region": "Karnataka",
+      "activeCases": 60177,
+      "newInfected": 10546,
+      "recovered": 2965105,
+      "newRecovered": 1148,
+      "deceased": 38374,
+      "newDeceased": 4,
+      "totalInfected": 3063656
+    },
+    {
+      "region": "Kerala***",
+      "activeCases": 38436,
+      "newInfected": 2835,
+      "recovered": 5203146,
+      "newRecovered": 2796,
+      "deceased": 49757,
+      "newDeceased": 166,
+      "totalInfected": 5291339
+    },
+    {
+      "region": "Ladakh",
+      "activeCases": 397,
+      "newInfected": 57,
+      "recovered": 22067,
+      "newRecovered": 67,
+      "deceased": 222,
+      "newDeceased": 1,
+      "totalInfected": 22686
+    },
+    {
+      "region": "Lakshadweep",
+      "activeCases": 1,
+      "newInfected": 0,
+      "recovered": 10368,
+      "newRecovered": 0,
+      "deceased": 51,
+      "newDeceased": 0,
+      "totalInfected": 10420
+    },
+    {
+      "region": "Madhya Pradesh",
+      "activeCases": 8599,
+      "newInfected": 1757,
+      "recovered": 784506,
+      "newRecovered": 559,
+      "deceased": 10538,
+      "newDeceased": 1,
+      "totalInfected": 803643
+    },
+    {
+      "region": "Maharashtra",
+      "activeCases": 209764,
+      "newInfected": 3791,
+      "recovered": 6602103,
+      "newRecovered": 29671,
+      "deceased": 141647,
+      "newDeceased": 8,
+      "totalInfected": 6953514
+    },
+    {
+      "region": "Manipur",
+      "activeCases": 438,
+      "newInfected": -31,
+      "recovered": 123779,
+      "newRecovered": 103,
+      "deceased": 2011,
+      "newDeceased": 0,
+      "totalInfected": 126228
+    },
+    {
+      "region": "Meghalaya",
+      "activeCases": 448,
+      "newInfected": 54,
+      "recovered": 83369,
+      "newRecovered": 14,
+      "deceased": 1487,
+      "newDeceased": 2,
+      "totalInfected": 85304
+    },
+    {
+      "region": "Mizoram",
+      "activeCases": 5910,
+      "newInfected": 1298,
+      "recovered": 141086,
+      "newRecovered": 214,
+      "deceased": 562,
+      "newDeceased": 1,
+      "totalInfected": 147558
+    },
+    {
+      "region": "Nagaland",
+      "activeCases": 104,
+      "newInfected": 23,
+      "recovered": 31495,
+      "newRecovered": 9,
+      "deceased": 703,
+      "newDeceased": 0,
+      "totalInfected": 32302
+    },
+    {
+      "region": "Odisha",
+      "activeCases": 20199,
+      "newInfected": 4415,
+      "recovered": 1047031,
+      "newRecovered": 414,
+      "deceased": 8468,
+      "newDeceased": 0,
+      "totalInfected": 1075698
+    },
+    {
+      "region": "Puducherry",
+      "activeCases": 1722,
+      "newInfected": 472,
+      "recovered": 127607,
+      "newRecovered": 17,
+      "deceased": 1882,
+      "newDeceased": 0,
+      "totalInfected": 131211
+    },
+    {
+      "region": "Punjab",
+      "activeCases": 19379,
+      "newInfected": 3036,
+      "recovered": 589285,
+      "newRecovered": 884,
+      "deceased": 16683,
+      "newDeceased": 8,
+      "totalInfected": 625347
+    },
+    {
+      "region": "Rajasthan",
+      "activeCases": 25088,
+      "newInfected": 5621,
+      "recovered": 948210,
+      "newRecovered": 472,
+      "deceased": 8974,
+      "newDeceased": 2,
+      "totalInfected": 982272
+    },
+    {
+      "region": "Sikkim",
+      "activeCases": 314,
+      "newInfected": 96,
+      "recovered": 32107,
+      "newRecovered": 15,
+      "deceased": 410,
+      "newDeceased": 1,
+      "totalInfected": 32831
+    },
+    {
+      "region": "Tamil Nadu",
+      "activeCases": 62767,
+      "newInfected": 11432,
+      "recovered": 2714643,
+      "newRecovered": 2547,
+      "deceased": 36866,
+      "newDeceased": 11,
+      "totalInfected": 2814276
+    },
+    {
+      "region": "Telangana",
+      "activeCases": 14995,
+      "newInfected": 1473,
+      "recovered": 676817,
+      "newRecovered": 351,
+      "deceased": 4043,
+      "newDeceased": 1,
+      "totalInfected": 695855
+    },
+    {
+      "region": "Tripura",
+      "activeCases": 1332,
+      "newInfected": 529,
+      "recovered": 84352,
+      "newRecovered": 49,
+      "deceased": 831,
+      "newDeceased": 1,
+      "totalInfected": 86515
+    },
+    {
+      "region": "Uttarakhand",
+      "activeCases": 5009,
+      "newInfected": 891,
+      "recovered": 339739,
+      "newRecovered": 396,
+      "deceased": 7429,
+      "newDeceased": 5,
+      "totalInfected": 352177
+    },
+    {
+      "region": "Uttar Pradesh",
+      "activeCases": 33946,
+      "newInfected": 7972,
+      "recovered": 1688983,
+      "newRecovered": 335,
+      "deceased": 22932,
+      "newDeceased": 4,
+      "totalInfected": 1745861
+    },
+    {
+      "region": "West Bengal",
+      "activeCases": 89194,
+      "newInfected": 11083,
+      "recovered": 1665221,
+      "newRecovered": 8187,
+      "deceased": 19917,
+      "newDeceased": 16,
+      "totalInfected": 1774332
+    }
+  ]
+}

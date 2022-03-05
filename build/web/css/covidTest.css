@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Mar, 2022, 10:13:20 PM
+    Author     : Chetan
+*/
+
+body{
+    padding: 4rem 0 0 0;
+}
+.covidTest{
+    width: 80vw;
+    margin: 2rem auto;
+}
+.covidTest form{
+    border: 3px solid var(--text);
+    border-radius: 10px;
+    padding: 3vw;
+}
+.covidTest form .question{
+    line-height: 35px;
+    font-size: 1.5rem;
+    margin: 50px 5px;
+    color: var(--text);
+}
+.covidTest form .options{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.covidTest form .title{
+    font-size: calc(20px + 2vw);
+    font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  margin: 0 0 3vw 0;
+  font-weight: 900;
+    text-align: center;
+}
+.covidTest form ul{
+   list-style-position: inside;
+}
+.formButton{
+    float: right;
+    cursor: pointer;
+    background-image: linear-gradient(0deg,var(--primary-color),10%,var(--secondary-color));
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    transform: translateY(-30px);
+    font-weight: 600;
+    margin: 0 10px;
+    color: var(--text);
+    transition: 300ms;
+}
+.formButton:hover{
+    box-shadow: 3px 3px 9px -2px var(--text);
+}
+hr{
+    border: 1px solid var(--text);
+}
+.hidden-content{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .covidTest form .title{
+        font-size: 2rem;
+    }
+    .covidTest form .question{
+        font-size: 1rem;line-height: 25px;
+    }
+    .covidTest form .options{
+        font-size: 1.5rem;
+    }
+    .formButton{
+    transform: translateY(-50px);
+    }
+}

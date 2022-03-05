@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff7300" />
+  <title>Covid-India</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="media/icon.png" type="image/icon type" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="media/icon.png" />
+</head>
+
+<body onload="load(),homeLoad()">
+  <div id="loading"><i class="fas fa-viruses"></i>Loading...</div>
+  <a href="#top" id="scrollup"><i class="fas fa-chevron-up"></i></a>
+  <header>
+    <div class="logo"><i class="fas fa-viruses"></i> Covid-India</div>
+    <span onclick="open_nav()" class="nav-toggle-open">&#9776;</span>
+    <nav id="Sidenav">
+      <ul>
+        <li>
+          <span onclick="close_nav()" class="nav-toggle-close">&times;</span>
+        </li>
+        <li>
+          <button id="toggle-theme-button"><i class="fas fa-sun"></i></button>
+        </li>
+        <li>
+          <a href="#top" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#Statewise_Status">Statewise Status</a>
+        </li>
+        <li>
+          <a href="#newsLocation">News</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact us</a>
+        </li>
+        <li>
+          <a href="signup.jsp">Sign-up</a>
+        </li>
+        <li>
+          <a href="login.jsp">Login </a><i class="fas fa-arrow-right"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="scrollbar"></div>
+
+  <div class="network_error" id="network_error">
+    <div class="box">
+      <p id="error_display">Network Conection Error</p>
+      <button class="reload" onClick="window.location.reload();">
+        Reload Page
+      </button>
+    </div>
+  </div>
+
+  <div class="main-covid">
+    <div class="main-covid-box active">
+      <div class="title active-title">Active</div>
+      <div class="currunt" id="active_cases_india">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+      <div class="up-down" id="active_cases_india_change">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+    </div>
+    <div class="main-covid-box recovered">
+      <div class="title recovered-title">recovered</div>
+      <div class="currunt" id="recovered_cases_india">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+      <div class="up-down" id="recovered_cases_india_change">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+    </div>
+    <div class="main-covid-box deaths">
+      <div class="title deaths-title">Deaths</div>
+      <div class="currunt" id="death_cases_india">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+      <div class="up-down" id="death_cases_india_change">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+    </div>
+  </div>
+  <div class="Last-Updated">
+    <div class="Last-Updated-box">
+      <div class="Last-Updated-title">Last updated on :</div>
+      <div id="Last_Updated">
+        <img src="media/loading.gif" alt="img" style="width: 25px; opacity: 80%" />
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="covid-prevention-title">Covid preventions</div>
+  <div class="covid-prevention">
+    <div class="covid-prevention-box">
+      <div class="title">Wear Mask</div>
+      <i class="fas fa-head-side-mask"></i>
+      <div class="disc">
+        Wear a mask in public, especially indoors or when physical distancing
+        is not possible.
+      </div>
+    </div>
+    <div class="covid-prevention-box">
+      <div class="title">Wash Hands</div>
+      <i class="fas fa-hands-wash"></i>
+      <div class="disc">
+        Clean your hands often. Use soap and water, or an alcohol-based hand
+        rub.
+      </div>
+    </div>
+    <div class="covid-prevention-box">
+      <div class="title">Keep Distance</div>
+      <i class="fas fa-people-arrows"></i>
+      <div class="disc">
+        Maintain a safe distance from others (at least 1 metre), even if they
+        don't appear to be sick.
+      </div>
+    </div>
+    <div class="covid-prevention-box">
+      <div class="title">Stay Home</div>
+      <i class="fas fa-head-side-cough"></i>
+      <div class="disc">
+        Stay home if you feel unwell, and don't get close to anyone.
+      </div>
+    </div>
+  </div>
+
+  <hr />
+  <div class="chart">
+    <button id="chart_show" onclick="chart_show_toogle()">
+      Show Statewise Data in Chart
+    </button>
+    <div id="canvas-scroll">
+      <canvas id="myChart" height="1px"></canvas>
+    </div>
+  </div>
+
+  <hr />
+  <div class="table-title">COVID-19 Statewise Status</div>
+  <div class="states-table" id="Statewise_Status">
+    <table id="Data_of_Contry">
+      <tr>
+        <th>S.No.</th>
+        <th>Name of State</th>
+        <th>Active Cases</th>
+        <th>recovered Cases</th>
+        <th>Deceased</th>
+        <th>Total Infected</th>
+      </tr>
+    </table>
+  </div>
+  <hr />
+  <div class="center" id="newsLocation">
+    <div class="news-title">Letest News of covid</div>
+    <div class="all-news">
+      <div class="news" id="news"></div>
+    </div>
+  </div>
+  <hr />
+  <div class="contact-title" id="Contact">Contact Us</div>
+  <div class="message">
+    <form action="https://formsubmit.co/chetankhulage350@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Name" required /><br />
+      <input type="text" name="name" placeholder="Email ID" required /><br />
+      <textarea name="message" placeholder="Enter Message" required></textarea><br />
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="http://chetank.dx.am/sent_success.html" />
+      <input type="submit" value="Send" id="send-button" />
+    </form>
+  </div>
+  <marquee class="help-title">
+    For any technical enquiry with respect to COVID-19, you may kindly email
+    on technicalquery.covid19@gov.in
+  </marquee>
+  <footer>
+    <div class="copyright">
+      Copyright &copy; Covid-India | 2021-<span id="year">00</span>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Chetan-KK/"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/chetan-khulage-846655206/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/16987115/chetan-khulage"><i class="fab fa-stack-overflow"></i></a>
+      <a href="https://twitter.com/chetan_khulage"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+
+</html>
