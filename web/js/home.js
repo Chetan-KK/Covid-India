@@ -130,7 +130,7 @@ async function updateNews() {
     };
 
     fetch(
-        // "https://newsapi.org/v2/everything?q=Aajtak.in&from=&sortBy=publishedAt&apiKey=ec5f7561699e4613a0bf1b6485c02c10"
+//         "https://newsapi.org/v2/everything?q=Aajtak.in&from=&sortBy=publishedAt&apiKey=ec5f7561699e4613a0bf1b6485c02c10"
         "json/news.json"
     )
         .then((response) => response.json())

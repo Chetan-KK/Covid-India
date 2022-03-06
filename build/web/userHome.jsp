@@ -60,21 +60,21 @@
         </div>
     </div>
             <%
-                if(user.getFirst_dose_date() == null || user.getFirst_dose_date() == "null"){
+                if(user.getFirst_dose_date().equals(null) || user.getFirst_dose_date().equals("null")){
                     %>
                     <div class="details-of-user">
         <div class="all-details">
             <div class="dose-type-box dose-box">
                 <div class="title">Dose Type</div>
-                <div class="info">Please take a dose first</div>
+                <div class="info">Please take a dose first<br><a target="_blank" href="https://selfregistration.cowin.gov.in/">Click here</a> to register</div>
             </div>
             <div class="first-dose-date-box dose-box">
                 <div class="title">First dose date</div>
-                <div class="info">Please take a dose first</div>
+                <div class="info">Please take a dose first<br><a target="_blank" href="https://selfregistration.cowin.gov.in/">Click here</a> to register</div>
             </div>
             <div class="first-dose-date-box dose-box">
                 <div class="title">second dose date</div>
-                <div class="info">Please take a dose first</div>
+                <div class="info">Please take a dose first<br><a target="_blank" href="https://selfregistration.cowin.gov.in/">Click here</a> to register</div>
             </div>
         </div>
     </div>
