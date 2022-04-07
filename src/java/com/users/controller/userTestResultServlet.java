@@ -129,7 +129,11 @@ public class userTestResultServlet extends HttpServlet {
             if (b) {
 
                 out.println("<script type=\"text/javascript\">");
-                out.println("alert('your points are "+points+"');");
+                if(points<=6){
+                out.println("alert('your result is good, take care of yourself');");
+                }else{
+                   out.println("alert('your result is not so good, please visit your nearest hospital');"); 
+                }
                 out.println("location='./userHome.jsp';");
 
                 out.println("</script>");
