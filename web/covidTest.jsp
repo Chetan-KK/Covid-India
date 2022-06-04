@@ -84,9 +84,9 @@
                     confirmed COVID - 19 diagnosis in the past 14 days?</p>
                 <div class="options">
                     <input type="radio" id="q1yes" name="question1" value="yes" required>
-                    <label for="q1yes">yes</label>
+                    <label for="q1yes">Yes</label>
                     <input type="radio" id="q1no" name="question1" value="no" required>
-                    <label for="q1no">no</label>
+                    <label for="q1no">No</label>
                 </div>
             </div>
             <hr>
@@ -94,9 +94,9 @@
                 <p>2.Have you traveled anywhere in last 15 days?</p>
                 <div class="options">
                     <input type="radio" id="q2yes" name="question2" value="yes" required>
-                    <label for="q2yes">yes</label>
+                    <label for="q2yes">Yes</label>
                     <input type="radio" id="q2no" name="question2" value="no" required>
-                    <label for="q2no">no</label>
+                    <label for="q2no">No</label>
                 </div>
             </div>
             <hr>
@@ -105,9 +105,9 @@
                 <p>3. Do you have fever more than 98 degrees?</p>
                 <div class="options">
                     <input type="radio" id="q3yes" name="question3" value="yes" required>
-                    <label for="q3yes">yes</label>
+                    <label for="q3yes">Yes</label>
                     <input type="radio" id="q3no" name="question3" value="no" required>
-                    <label for="q3no">no</label>
+                    <label for="q3no">No</label>
                 </div>
             </div>
             <hr>
@@ -116,9 +116,9 @@
                 <p>4. In the last 10 days, have you been tested for the coronavirus that causes COVID-19?</p>
                 <div class="options">
                     <input type="radio" id="q4yes" name="question4" value="yes" required>
-                    <label for="q4yes">yes</label>
+                    <label for="q4yes">Yes</label>
                     <input type="radio" id="q4no" name="question4" value="no" required>
-                    <label for="q4no">no</label>
+                    <label for="q4no">No</label>
                 </div>
             </div>
 
@@ -128,9 +128,9 @@
                     behavioral health center, juvenile detention center, or homeless shelter)?</p>
                 <div class="options">
                     <input type="radio" id="q5yes" name="question5" value="yes" required>
-                    <label for="q5yes">yes</label>
+                    <label for="q5yes">Yes</label>
                     <input type="radio" id="q5no" name="question5" value="no" required>
-                    <label for="q5no">no</label>
+                    <label for="q5no">No</label>
                 </div>
             </div>
             <hr>
@@ -138,9 +138,9 @@
                 <p>6.Have you lost the sense of smell recently?</p>
                 <div class="options">
                     <input type="radio" id="q6yes" name="question6" value="yes" required>
-                    <label for="q6yes">yes</label>
+                    <label for="q6yes">Yes</label>
                     <input type="radio" id="q6no" name="question6" value="no" required>
-                    <label for="q6no">no</label>
+                    <label for="q6no">No</label>
                 </div>
             </div>
             <hr>
@@ -148,9 +148,9 @@
                 <p>7.Do you have body pain and fatigue?</p>
                 <div class="options">
                     <input type="radio" id="q7yes" name="question7" value="yes" required>
-                    <label for="q7yes">yes</label>
+                    <label for="q7yes">Yes</label>
                     <input type="radio" id="q7no" name="question7" value="no" required>
-                    <label for="q7no">no</label>
+                    <label for="q7no">No</label>
                 </div>
             </div>
             <hr>
@@ -158,9 +158,9 @@
                 <p>8.Do you have diarrhoea?</p>
                 <div class="options">
                     <input type="radio" id="q8yes" name="question8" value="yes" required>
-                    <label for="q8yes">yes</label>
+                    <label for="q8yes">Yes</label>
                     <input type="radio" id="q8no" name="question8" value="no" required>
-                    <label for="q8no">no</label>
+                    <label for="q8no">No</label>
                 </div>
             </div>
             <hr>
@@ -168,9 +168,9 @@
                 <p>9.Are you experiencing difficulty in breathing?</p>
                 <div class="options">
                     <input type="radio" id="q9yes" name="question9" value="yes" required>
-                    <label for="q9yes">yes</label>
+                    <label for="q9yes">Yes</label>
                     <input type="radio" id="q9no" name="question9" value="no" required>
-                    <label for="q9no">no</label>
+                    <label for="q9no">No</label>
                 </div>
             </div>
             <hr>
@@ -178,9 +178,9 @@
                 <p>10.Are you experiencing the sense of taste after eating food?</p>
                 <div class="options">
                     <input type="radio" id="q10yes" name="question10" value="yes" required>
-                    <label for="q10yes">yes</label>
+                    <label for="q10yes">Yes</label>
                     <input type="radio" id="q10no" name="question10" value="no" required>
-                    <label for="q10no">no</label>
+                    <label for="q10no">No</label>
                 </div>
             </div>
             <input type="submit" class="formButton">

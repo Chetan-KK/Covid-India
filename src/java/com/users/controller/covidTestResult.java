@@ -112,7 +112,7 @@ public class covidTestResult extends HttpServlet {
                 
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Thank you! your points are "+points+"');");
-                out.println("location='./userHome.jsp';");
+                out.println("location='./logout.jsp';");
 
                 out.println("</script>");
             } else {

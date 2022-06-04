@@ -185,6 +185,9 @@ hr {
 
 .states-table {
   overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--text);
   text-align: center;
 }
@@ -375,7 +378,11 @@ textarea:hover {
   position: relative;
   color: var(--text);
 }
-
+@media (max-width: 1340px) {
+  .states-table {
+    display: block;
+  }
+}
 @media (max-width: 780px) {
   .main-covid {
     padding: 6rem 20px;

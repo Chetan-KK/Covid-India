@@ -1,14 +1,14 @@
 {
-  "activeCases": 821446,
-  "activeCasesNew": 97827,
-  "recovered": 34570131,
-  "recoveredNew": 69959,
-  "deaths": 484213,
-  "deathsNew": 277,
-  "previousDayTests": 1579928,
-  "totalCases": 35875790,
+  "activeCases": 22416,
+  "activeCasesNew": 1239,
+  "recovered": 42625454,
+  "recoveredNew": 2697,
+  "deaths": 524677,
+  "deathsNew": 26,
+  "previousDayTests": 445814,
+  "totalCases": 43172547,
   "sourceUrl": "https://www.mohfw.gov.in/",
-  "lastUpdatedAtApify": "2022-01-11T04:00:00.000Z",
+  "lastUpdatedAtApify": "2022-06-04T05:00:00.000Z",
   "readMe": "https://github.com/zpelechova/covid-in/blob/master/README.md",
   "regionData": [
     {

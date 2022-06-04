@@ -59,18 +59,18 @@
       <input type="email" name="email" placeholder="Enter Email-id" required />
       <input type="password" name="password" minlength="6" placeholder="Create new Password" required />
       <select name="dose_status" id="doses" required>
-        <option value="0">didn't take any dose</option>
-        <option value="1">first dose completed</option>
-        <option value="2">second dose completed</option>
+        <option value="0">Did't take any Dose</option>
+        <option value="1">First Dose Completed</option>
+        <option value="2">Second Dose Completed</option>
       </select>
       <select name="dose_type" id="doseType" required disabled>
         <option value="Covishield">Covishield</option>
         <option value="Covaxin">Covaxin</option>
       </select>
       <div class="dosesDate">
-        <label for="dose1Date">&#8681; Enter date of first dose &#8681;</label>
+        <label for="dose1Date">&#8681; Enter Date of First Dose &#8681;</label>
         <input type="date" name="first_dose_date" class="dose1 inputDate">
-        <br> <label for="dose2Date">&#8681; Enter date of second dose &#8681;</label>
+        <br> <label for="dose2Date">&#8681; Enter Date of Second Dose &#8681;</label>
         <input type="date" name="second_dose_date" class="dose2 inputDate">
       </div>
       <input type="text" name="test_completed" value="false" hidden="hidden">
@@ -78,7 +78,7 @@
       <input type="submit" value="Sign-up" id="log-button" />
     </form>
     <b class="noAC">
-      have an account?
+      Have an Account?
       <a href="login.jsp">Login <i class="fas fa-arrow-right"></i></a>
     </b>
   </div>

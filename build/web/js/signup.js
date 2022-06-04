@@ -37,6 +37,6 @@ function resetDoses() {
     option.setAttribute(`hidden`, `hiddin`)
     option.setAttribute(`selected`, `selected`)
     option.setAttribute(`disabled`, `disabled`)
-    option.innerText = `select vaccine type`
+    option.innerText = `Select Vaccine Type`
     doseType.appendChild(option)
 }

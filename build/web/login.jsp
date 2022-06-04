@@ -52,14 +52,14 @@
   <div id="scrollbar"></div>
 
   <div class="form-bg login-form">
-    <div class="form-title">login</div>
+    <div class="form-title">Login</div>
     <form action="userLoginServlet" method="post">
       <input type="email" name="email" placeholder="Enter Email" required />
       <input type="password" name="password" placeholder="Enter Password" required />
       <input type="submit" value="Login" id="log-button" />
     </form>
     <b class="noAC">
-      Don't have an account?
+      Don't have an Account?
       <a href="signup.jsp">Sign up <i class="fas fa-arrow-right"></i></a>
     </b>
   </div>

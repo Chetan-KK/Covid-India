@@ -60,7 +60,7 @@
         </div>
     </div>
             <%
-                if(user.getFirst_dose_date().equals(null) || user.getFirst_dose_date().equals("null")){
+                if(user.getFirst_dose_date() == null || user.getFirst_dose_date().equals("null")){
                     %>
                     <div class="details-of-user">
         <div class="all-details">
